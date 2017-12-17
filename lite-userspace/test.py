@@ -24,3 +24,8 @@ def get_LITE_cluster_info():
 # a function that sends an array
 
 # a function that receives an array and prints it out
+
+
+# 
+join_cluster()
+get_LITE_cluster_info()
