@@ -22,6 +22,10 @@
 
 //to compile in shared library
 //gcc -shared -Wl,-soname,test -o test.so -fPIC test.c
+//gcc -shared -Wl,-soname,test -o test.so -fPIC test.c
+
+//gcc -shared -o lite-lib.so -fPIC lite-lib.c
+
 
 void derp(void);
 
@@ -29,7 +33,7 @@ void derp(){
     printf("Herpa derp");
 }
 
-
+/*
 void join(void);
 
 void join(){
@@ -43,16 +47,32 @@ unsigned  int get_own_cluster_id(void);
 unsigned  int get_own_cluster_id() {
     return userspace_liteapi_get_node_id();
 }
+*/
 
+/*
 unsigned int get_cluster_size(void);
 
 unsigned int get_cluster_size(){
     return userspace_liteapi_get_total_node();
 }
+*/
+
+int test(int *a, int *b){
+
+    int thing1 = *a;
+    int thing2 = *b;
+
+    //printf("test.test was passed ");
+    return *a + *b;
+
+}
+
+
+
 
 int main() {
 
-    printf("Hello idiot");
+    printf("Hello");
 
     return 0;
 }
